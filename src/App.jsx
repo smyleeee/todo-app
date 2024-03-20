@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
+        <Route index path='' element={<Home />} />
           <Route index path='home' element={<Home />} />
           <Route index path='todo' element={<AddTodo />} />
           <Route path="list/:id" element={<AddTodo id={':id'} />} />
