@@ -9,8 +9,8 @@
             "dest": "/"
         },
         {
-            "src": "/list/*",
-            "dest": "/"
+            "src": "/list/[id]",
+            "dest": "/list"
         }
     ]
 }
