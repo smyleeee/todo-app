@@ -1,0 +1,45 @@
+// NOTE! Put redefined colors at top!
+
+//Colors
+$primary: #5E1B89; // lawful purple
+$primary-transparent: rgba(94, 27, 137, 0.7); // lawful purple with 70% opacity
+$secondary: #F4512C; // striking orange
+$secondary-light: #FF7F4D; // striking orange
+$secondary-transparent: #f4512c4b;
+$light: #F8FFFE; 
+$light-transparent: #f8fffece;
+$gradient-1: linear-gradient(to top right, #5E1B89, #F4512C);
+$gradient-2: linear-gradient(to right, #F4512C, #5E1B89);
+
+//Font
+$font1: 'Roboto Slab'; 
+$font2: 'Lato';
+$logoFont: 'Dm sans';
+
+
+
+// import the functions and variables
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+
+$custom-themed-colors: (
+    // to follow
+);
+
+$theme-colors: map-merge($custom-themed-colors, $theme-colors);
+
+//Mixins ~ just like components and a function
+    // use as @include mixinName(var, var);
+
+@mixin logoTitleFont {
+    font: $logoFont;
+    font-size: 50px;
+    font-weight: 700;
+    color: $light;
+}
+@mixin hoverButton {
+    background-color: $light
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap';

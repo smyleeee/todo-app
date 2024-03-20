@@ -1,0 +1,16 @@
+{
+    "list": [
+    {
+      "id": 1,
+      "name": "Plans"
+    },
+    {
+        "id": 2,
+        "name": "Chores"
+    },
+    {
+        "id": 3,
+        "name": "Important"
+    }
+    ]
+}
