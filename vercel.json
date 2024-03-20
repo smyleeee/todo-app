@@ -10,7 +10,7 @@
         },
         {
             "src": "/list/[id]",
-            "dest": "/list"
+            "dest": "/"
         }
     ]
 }
