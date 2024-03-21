@@ -247,7 +247,7 @@ function MainLayout() {
               type="text"
               className="formInput w-100"
               placeholder="Edit list name..."
-              value={editingText}
+              value={editingText || submenuData[editingIndex]?.name}
               onChange={(e) => setEditingText(e.target.value)}
             />
             <div className='d-flex flex-row justify-content-end pt-2'>     
