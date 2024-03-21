@@ -229,8 +229,8 @@ function MainLayout() {
         <div className="modal">
           <div className="modal-content">
             <p>Are you sure you want to delete this list?</p>
-            <div className='d-flex flex-row justify-content-end'>     
-                <button className="btnOutline btn btn-outline-secondary me-1" onClick={handleModalClose}>
+            <div className='d-flex flex-row justify-content-end mt-2'>     
+                <button className="btnOutline btn btn-outline-secondary me-2" onClick={handleModalClose}>
                 Cancel
                </button>
                 <button className="btn btn-secondary" onClick={handleModalConfirm}>
@@ -245,13 +245,13 @@ function MainLayout() {
           <div className="modal-content">
             <input
               type="text"
-              className="formInput w-100"
+              className="formInput w-100 mb-1"
               placeholder="Edit list name..."
               value={editingText || submenuData[editingIndex]?.name}
               onChange={(e) => setEditingText(e.target.value)}
             />
             <div className='d-flex flex-row justify-content-end pt-2'>     
-                <button className="btnOutline btn btn-outline-secondary me-1" onClick={handleEditModalClose}>
+                <button className="btnOutline btn btn-outline-secondary me-2" onClick={handleEditModalClose}>
                   Cancel
                </button>
                 <button className="btn btn-secondary" onClick={handleEditModalConfirm}>
